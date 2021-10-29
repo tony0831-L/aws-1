@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>aws-1`</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <p>{{date}}&nbsp;{{time}}</p>
+      &nbsp;
+      <input type="text" placeholder="your firstname" v-model="first" />
+      <input type="text" placeholder="your lastname" v-model="last" />
+      <input type="text" placeholder="your height" v-model="high" />
+      <input type="text" placeholder="your weight" v-model="weight" />
+      <div class="res">
+        <button @click="post">post</button>
+        &nbsp;
+        <p>{{res}}</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

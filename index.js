@@ -25,9 +25,11 @@ Vue.createApp({
                     "weight":this.weight
                 }),
             })
-                .then(response => response.text())
-                .then(result => this.res=JSON.parse(result).body)
-                .catch(error => console.log('error', error));
+            .then(response => response.text())
+            .then(result => {
+                this.res=this.first+" "+this.last+". your bmi is:"+Math.round(parseFloat(JSON.parse(result).body)*100)/100;
+            })
+            .catch(error => console.log('error', error));
         }
     }
 }).mount('#app')

@@ -21,12 +21,11 @@ exports.handler = async (event) => {
     };
     // Using await, make sure object writes to DynamoDB table before continuing execution
     let bmi = event.weight / ((event.height / 100) * (event.height / 100))
-    let resData = `${name},your bmi is ${bmi}`
     await dynamodb.put(params).promise();
     // Create a JSON object with our response and store it in a constant
     const response = {
         statusCode: 200,
-        body: resData
+        body: bmi
     };
     // Return the response constant
     return response;

@@ -5,7 +5,7 @@ Vue.createApp({
             last:"",
             weight:0,
             high:0,
-            res:0,
+            res:"",
             date:dayjs().format('YYYY/MM/DD'),
             time:dayjs().format('HH:mm:ss'),
             history:[],

@@ -31,12 +31,14 @@ body {
   display: flex;
 }
 button {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
   cursor: pointer;
   padding: 0.2%;
   background: transparent;
   border-radius: 0.3rem;
-  border: solid 0.1rem #87878757;
-  box-shadow: 0rem 0rem 0.1rem 0.1rem #87878757;
+  border: solid 0.15rem #878787;
+  box-shadow: 0rem 0rem 0.1rem 0.15rem #87878757;
 }
 button:hover {
   padding: 0.25%;
@@ -45,10 +47,12 @@ button:hover {
   display: flex;
   width: 100%;
   margin: 1% 0%;
-  padding: 0.5% 0%;
+  padding: 0.5%;
   color: #333;
   font-size: 1.2rem;
-  border-bottom: solid 0.06rem #333;
+  margin-bottom: 1.5em;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.02rem 0.2rem 0.25rem #87878777;
 }
 .his i {
   margin-left: 1rem;

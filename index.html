@@ -18,13 +18,13 @@
       <input type="text" placeholder="your height" v-model="high" />
       <input type="text" placeholder="your weight" v-model="weight" />
       <div class="res">
-        <button @click="post">post</button>
+        <button @click="post">Post</button>
         &nbsp;
         <p>{{res}}</p>
       </div>
       &nbsp;
       <div class="history">
-        <button @click="get">gethistory</button>
+        <button @click="get">GetHistory</button>
         <div class="his" v-for="(i,index) in history" :key="index">
           {{"User: "+i.id +', post in : '+ i.LatestGreetingTime}}
           <i class="bi bi-trash" @click="del(i.id)"></i>
